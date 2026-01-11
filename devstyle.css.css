@@ -1,0 +1,119 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+     font-family: 'Roboto', sans-serif;
+     background-color: lightgray;
+     color: black;
+     line-height: 1.6;
+}
+ 
+header{
+    background: darkblue;
+    color: white;
+    padding: 40px  20px;
+    text-align: center;
+}
+
+header  h1{
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p{
+    font-weight: 400;
+    font-size: 1.2rem;
+
+}
+nav{
+    background-color: darkblue;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px gray;
+}
+.navbar{
+   display: flex;
+   justify-content: center;
+   list-style: none;
+   padding: 10px 0;
+   margin: 0;
+}
+.navbar li{
+    margin: 0 20px;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.navbar a:hover{
+    color: skyblue;
+    text-decoration: underline;
+    transition: all  ;
+}
+section{
+    background-color: white;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px grey;
+    border-radius:10px ;
+}
+section h2{
+    margin-bottom: 15px;
+    color: darkblue;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+ul li{
+    background-color: skyblue;
+    margin-bottom: 12px;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+ul li:hover{
+    background-color: darkblue;
+    color: white;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+footer{
+    text-align: center;
+    padding: 15px;
+    background-color: darkblue;
+    color: white;
+    margin-top: 50px ;
+}
+@media(max-width: 600px){
+    section{
+        margin:20px;
+        padding: 15px;
+    }
+    header h1{
+        font-size: 2rem;
+    }
+    header p{
+        font-size: 1rem;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .navbar li{
+        margin:10px 0;
+    }
+}
